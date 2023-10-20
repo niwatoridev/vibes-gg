@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+}
+
+#headerVideo {
+  margin-left: 0px;
+  margin-top: -125px;
+}
+
+.videoContainer {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  height: 800px;
+}
+
+.body {
+  height: 700px;
+}
+
+.footer {
+  height: 300px;
+  color: gray;
+  background-color: gray;
+}

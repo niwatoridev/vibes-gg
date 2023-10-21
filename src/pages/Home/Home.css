@@ -14,8 +14,18 @@
   height: 800px;
 }
 
+.detector {
+  background-color: transparent;
+  width: 100px;
+  height: 1px;
+  position: relative;
+  top: 90%;
+  left: 50%;
+}
+
 .body {
   height: 700px;
+  background-color: blueviolet;
 }
 
 .footer {

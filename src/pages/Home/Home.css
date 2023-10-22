@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,300;0,400;0,500;1,500&family=Rock+Salt&display=swap');
+
 .header {
   width: 100%;
 }
@@ -14,7 +16,15 @@
   height: 800px;
 }
 
-.detector {
+.downArrow {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(268deg) brightness(107%) contrast(102%);
+  position: absolute;
+  top: 44vw;
+  right: 50vw;
+  width: 3vw;
+}
+
+.detectorNav {
   background-color: transparent;
   width: 100px;
   height: 1px;
@@ -24,9 +34,96 @@
 }
 
 .body {
-  height: 700px;
-  background-color: blueviolet;
+  height: 1500px;
+  background-color: #0c0c0c;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
+
+.aboutUsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.aboutUsTitleAndText h1 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 2vw;
+  color: whitesmoke;
+
+}
+
+.aboutUsTitleAndText p {
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 0 15%;
+  transition-duration: 1s;
+  color: whitesmoke;
+}
+
+.aboutUsTitleAndText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3vw;
+}
+
+.traslatedPointer {
+  top: 55vw;
+  right: 96vw;
+}
+
+
+.partners {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.partners h3 {
+  font-size: 2vw;
+  color: white;
+  position: relative;
+  margin-bottom: 0;
+  }
+
+
+.partnersLogos img{
+  max-width: 100px;
+  transition-duration: 250ms;
+
+}
+
+.partnersLogos {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: stretch;
+  width: 80vw;
+  height: 10vw;
+}
+
+.filteredLogo {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(268deg) brightness(107%) contrast(102%);
+}
+
+#novaGamingLogo {
+  height: 100px; 
+  transition-duration: 250ms;
+}
+
+
+#darkQualityLogo {
+  height: 100px;
+  transition-duration: 450ms;
+}
+
 
 .footer {
   height: 300px;

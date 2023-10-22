@@ -9,8 +9,6 @@ import downArrow from '../../media/downArrow.png'
 import novaGamingLogo from '../../media/novaGamingLogo.png'
 import { HashLink } from 'react-router-hash-link';
 
-
-
 function Home() {
 
 const videoHeader = useRef(null)
@@ -18,7 +16,6 @@ const [navIsTransparent, setNavIsTransparent] = useState(true)
 const videoRef = useRef();
 const homeRef = useRef();
 const [ isHomeRefVisible, setIsHomeRefVisible ] = useState(false);
-
 
 const attemptPlay = () => {
   videoHeader && 
@@ -112,7 +109,6 @@ const noHoveredImg = (e) => {
               <a href="https://www.lagranbodega.com.mx/" target='_blank'><img src={gbLogo} id='gbLogo' className='filteredLogo' onMouseEnter={hoveredImg} onMouseLeave={noHoveredImg} alt="Logo Gran Bodega" /></a>
                 <a href="https://twitter.com/novagamingsmash" target='_blank'><img src={novaGamingLogo} id='novaGamingLogo' className='filteredLogo' onMouseEnter={hoveredImg} onMouseLeave={noHoveredImg} alt="Logo Gran Bodega" /></a>
                 <a href="https://www.facebook.com/DQTTeam" target='_blank'><img src={darkQualityLogo} id='darkQualityLogo' className='filteredLogo' onMouseEnter={hoveredImg} onMouseLeave={noHoveredImg} alt="Logo Dark Quality" /></a>
-
               </div>
             </div>
         

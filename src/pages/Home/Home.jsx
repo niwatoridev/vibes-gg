@@ -39,33 +39,6 @@ const observer = new IntersectionObserver((entries)=>{
 observer.observe(videoRef.current)
 }, [])
 
-useEffect(()=>{
-  const observer = new IntersectionObserver((entries)=>{
-    const entry = entries[0];
-    console.log(entry)
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 2000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 3000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 4000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 5000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 6000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 8000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 9000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 10000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 11000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 12000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 13000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 14000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 15000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 16000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 17000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 18000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 19000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 20000);
-
-  })
-  observer.observe(homeRef.current)
-  }, [])
-
 const hoveredImg = (e) => {
 let image = e.target
 image.className = image.id
@@ -86,7 +59,7 @@ const noHoveredImg = (e) => {
         <div className='videoContainer'>
           <div ref={videoRef} className='detectorNav'></div>
           <video ref={videoHeader} src={headerVideo} loop muted alt="Header Video" id='headerVideo'></video>
-          {isHomeRefVisible ? <HashLink to="#aboutUs" smooth><img src={downArrow} className='downArrow' alt="downArrow" /></HashLink> : ''}
+          <HashLink to="#aboutUs" smooth><img src={downArrow} className='downArrow' alt="downArrow" /></HashLink>
         </div>
       </div>
       <div className='body'>

@@ -17,12 +17,37 @@
 }
 
 .downArrow {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(268deg) brightness(107%) contrast(102%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(268deg) brightness(107%) contrast(102%); /*  #ffffff  */
   position: absolute;
   top: 44vw;
   right: 50vw;
   width: 3vw;
+  transition-duration: .5s;
+  animation-name: bouncing-arrow;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
+
+.downArrow:hover{
+  filter: invert(48%) sepia(36%) saturate(2020%) hue-rotate(321deg) brightness(108%) contrast(101%); /*  #ff646e #ffffff  */
+}
+
+@keyframes bouncing-arrow {
+  
+  0% {
+    transform: translateY(0%);
+  }
+  
+  50% {
+    transform: translateY(30%);
+  }
+  
+  100% {
+    transform: translateY(0%);
+  }
+  
+  }
+
 
 .detectorNav {
   background-color: transparent;
@@ -32,6 +57,8 @@
   top: 90%;
   left: 50%;
 }
+
+
 
 .body {
   height: 100%;
@@ -43,7 +70,7 @@
   position: relative;
   top: 1vw;
   right: 0vw;
-  height: 1vw;
+  height: 0vw;
 
 }
 
@@ -60,6 +87,7 @@
   font-family: 'Rock Salt', cursive;
   font-size: 2vw;
   color: whitesmoke;
+  padding-top: 1vw;
 
 }
 

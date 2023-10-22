@@ -16,6 +16,14 @@
   height: 800px;
 }
 
+.downArrow {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(268deg) brightness(107%) contrast(102%);
+  position: absolute;
+  top: 44vw;
+  right: 50vw;
+  width: 3vw;
+}
+
 .detectorNav {
   background-color: transparent;
   width: 100px;
@@ -27,7 +35,7 @@
 
 .body {
   height: 1500px;
-  background-color: #6c4094;
+  background-color: #0c0c0c;
   padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
@@ -50,14 +58,10 @@
 .aboutUsTitleAndText p {
   font-family: 'Bebas Neue', sans-serif;
   text-align: center;
-  font-size: 1vw;
+  font-size: 1.5vw;
   padding: 0 15%;
   transition-duration: 1s;
   color: whitesmoke;
-}
-
-.aboutUsContainer p:hover {
-  font-size: 2vw;
 }
 
 .aboutUsTitleAndText {
@@ -67,12 +71,18 @@
   margin-bottom: 3vw;
 }
 
+.traslatedPointer {
+  top: 55vw;
+  right: 96vw;
+}
+
 
 .partners {
 display: flex;
 flex-direction: column;
 align-items: center;
 }
+
 
 .partners h3 {
   font-size: 2vw;
@@ -84,13 +94,8 @@ align-items: center;
 
 .partnersLogos img{
   max-width: 100px;
-  transition-duration: .5s;
+  transition-duration: 250ms;
 
-}
-
-.partnersLogos img:hover{
-  max-width: 200px;
-  margin-top: 2vw;
 }
 
 .partnersLogos {
@@ -100,20 +105,24 @@ align-items: center;
 	justify-content: space-evenly;
 	align-items: center;
 	align-content: stretch;
-  width: 100vw;
+  width: 80vw;
   height: 10vw;
+}
+
+.filteredLogo {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(268deg) brightness(107%) contrast(102%);
 }
 
+#novaGamingLogo {
+  height: 100px; 
+  transition-duration: 250ms;
+}
+
+
 #darkQualityLogo {
   height: 100px;
-  transition-duration: .5s;
+  transition-duration: 450ms;
 }
-
-#darkQualityLogo:hover{
-  height: 200px;
-}
-
 
 
 .footer {

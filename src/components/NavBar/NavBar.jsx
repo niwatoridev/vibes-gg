@@ -11,11 +11,11 @@ function NavBar() {
    return <div className="main-div">
     <div className='background'></div>
               <div className='navLogo'>
-              <HashLink to="#detectorHeader" smooth><img src={Logo} alt="Vibes Logo" id='Logo' /></HashLink>
+              <HashLink to="#home" smooth><img src={Logo} alt="Vibes Logo" id='Logo' /></HashLink>
               </div>
               <div className='navContent'>
                   <div className='navElement'>
-                  <HashLink to="#detectorBody" smooth><p>Sobre Nosotros</p></HashLink>
+                  <HashLink to="#aboutUs" smooth><p>Sobre Nosotros</p></HashLink>
                   </div>
                   <div className='navElement'>
                     <p>Proyectos</p>

@@ -21,7 +21,7 @@
     height: 13.217768147345613vh;
     top: 0;
     z-index: -1;
-    animation-duration: 1s;
+    animation-duration: 250ms;
     animation-name: animate-navBar-in;
 }
 

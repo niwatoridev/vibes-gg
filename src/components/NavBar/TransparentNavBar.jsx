@@ -20,7 +20,7 @@ function TransparentNavBar() {
           <HashLink to="#aboutUs" smooth><p>Sobre Nosotros</p></HashLink>
         </div>
         <div className='navElement'>
-          <p>Proyectos</p>
+          <HashLink to="#projects" smooth><p>Proyectos</p></HashLink>
         </div>
         <div className='navElement'>
           <p>Contacto</p>

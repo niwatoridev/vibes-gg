@@ -9,6 +9,8 @@ import downArrow from '../../media/downArrow.png'
 import novaGamingLogo from '../../media/novaGamingLogo.png'
 import { HashLink } from 'react-router-hash-link';
 
+
+
 function Home() {
 
 const videoHeader = useRef(null)
@@ -16,6 +18,7 @@ const [navIsTransparent, setNavIsTransparent] = useState(true)
 const videoRef = useRef();
 const homeRef = useRef();
 const [ isHomeRefVisible, setIsHomeRefVisible ] = useState(false);
+
 
 const attemptPlay = () => {
   videoHeader && 
@@ -41,32 +44,23 @@ useEffect(()=>{
     const entry = entries[0];
     console.log(entry)
     setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 2000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 2500);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 3000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 3500);
+    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 3000);
     setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 4000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 4500);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 5000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 5500);
+    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 5000);
     setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 6000);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 6500);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 7000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 7500);
     setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 8000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 8500);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 9000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 9500);
+    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 9000);
     setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 10000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 10500);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 11000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 11500);
+    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 11000);
     setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 12000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 12500);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 13000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 13500);
+    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 13000);
     setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 14000);
-    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 14500);
-    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 15000);
+    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 15000);
+    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 16000);
+    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 17000);
+    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 18000);
+    setTimeout(()=> {setIsHomeRefVisible(entry.isIntersecting)}, 19000);
+    setTimeout(()=> {setIsHomeRefVisible(!entry.isIntersecting)}, 20000);
 
   })
   observer.observe(homeRef.current)
@@ -95,7 +89,8 @@ const noHoveredImg = (e) => {
           {isHomeRefVisible ? <HashLink to="#aboutUs" smooth><img src={downArrow} className='downArrow' alt="downArrow" /></HashLink> : ''}
         </div>
       </div>
-      <div className='body'id='aboutUs'>
+      <div className='body'>
+        <div id='aboutUs'></div>
         <div className='aboutUsContainer'>
             <div className='aboutUsTitleAndText'>
               <h1>Bienvenidos a VibesGG: Donde los Esports Cobran Vida</h1>
@@ -111,7 +106,9 @@ const noHoveredImg = (e) => {
                 <a href="https://www.facebook.com/DQTTeam" target='_blank'><img src={darkQualityLogo} id='darkQualityLogo' className='filteredLogo' onMouseEnter={hoveredImg} onMouseLeave={noHoveredImg} alt="Logo Dark Quality" /></a>
               </div>
             </div>
-        
+        </div>
+        <div className='projectsContainer' id='projects'>
+
         </div>
       </div>
       <div className='footer'>

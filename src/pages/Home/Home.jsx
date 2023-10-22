@@ -8,6 +8,7 @@ import darkQualityLogo from '../../media/darkQualityEsports.png'
 import downArrow from '../../media/downArrow.png'
 import novaGamingLogo from '../../media/novaGamingLogo.png'
 import { HashLink } from 'react-router-hash-link';
+import ExpandingCards from '../../components/ExpandingCards/ExpandingCards';
 
 
 
@@ -59,7 +60,7 @@ const noHoveredImg = (e) => {
         <div className='videoContainer'>
           <div ref={videoRef} className='detectorNav'></div>
           <video ref={videoHeader} src={headerVideo} loop muted alt="Header Video" id='headerVideo'></video>
-          <HashLink to="#aboutUs" smooth><img src={downArrow} className='downArrow' alt="downArrow" /></HashLink>
+          <HashLink to="#aboutUs" smooth><img src={downArrow} className='downArrow' id='downArrowAboutUs' alt="downArrow" /></HashLink>
         </div>
       </div>
       <div className='body'>
@@ -81,7 +82,8 @@ const noHoveredImg = (e) => {
             </div>
         </div>
         <div className='projectsContainer' id='projects'>
-
+          <h1>Proyectos</h1>
+          <ExpandingCards></ExpandingCards>
         </div>
       </div>
       <div className='footer'>

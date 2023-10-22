@@ -70,12 +70,12 @@ margin-right: 15%;
     justify-items: center;
 }
 
-p {
+.navElement p {
     color: rgb(243, 243, 243);
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3vh;
-    
 }
+
 
 #Logo {
     width: 20vh;

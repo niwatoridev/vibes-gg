@@ -9,6 +9,25 @@
     width: 90vw;
 }
 
+.projectsContainer {
+    padding-top: 6vw;
+    padding-bottom: 5vw;
+    height: 100%;
+    background-color: #ff646e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .projectsContainer h1 {
+    font-size: 3vw;
+    margin-top: 1vw;
+    margin-bottom: 0;
+    font-family: 'Rock Salt', cursive;
+    color: whitesmoke;
+  }
+
 .panel {
     display: flex;
     flex-direction: column;
@@ -68,5 +87,11 @@
     }
 
  
+}
+
+.mainProjectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 

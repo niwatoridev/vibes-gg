@@ -89,3 +89,7 @@ margin-right: 15%;
 #sticky-Logo {
     height: 7vh;
 }
+
+.navLink {
+    text-decoration: none;
+}

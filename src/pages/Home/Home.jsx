@@ -38,7 +38,7 @@ observer.observe(videoRef.current)
       </div>
       <div className='body'>
         <div id='aboutUs'></div>
-          <AboutUs></AboutUs>
+        <AboutUs></AboutUs>
         <div id='projects'></div>
           <ExpandingCards></ExpandingCards>
         <div id='contactUs'>

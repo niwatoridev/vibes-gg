@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,300;0,400;0,500;1,500&family=Rock+Salt&display=swap');
 
 .header {
-  width: 100%;
+  width: 100vw;
+  display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 #headerVideo {
   margin-left: 0px;
   margin-top: -125px;
+    width: 112vw;
 }
 
 .videoContainer {
-  width: 100%;
-  overflow: hidden;
   display: block;
   height: 950px;
 }

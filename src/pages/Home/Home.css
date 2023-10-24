@@ -15,6 +15,11 @@
     width: 112vw;
 }
 
+#home {
+  position: absolute;
+  top: 1%;
+}
+
 .videoContainer {
   display: block;
   height: 950px;
@@ -46,19 +51,19 @@
 }
 
 @keyframes bouncing-arrow {
-  
+
   0% {
     transform: translateY(0%);
   }
-  
+
   50% {
     transform: translateY(30%);
   }
-  
+
   100% {
     transform: translateY(0%);
   }
-  
+
   }
 
 

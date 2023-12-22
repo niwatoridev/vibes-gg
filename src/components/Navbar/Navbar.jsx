@@ -28,13 +28,11 @@ function Navbar() {
 
     return (
         <>
-            <nav className='navbar'>
+            <nav className={click ? 'navbar active' : 'navbar'}>
                 <div className='navbar-container'>
-                    <div className='logo-container'>
-                        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                            <img src={vibesLogo} id='Logo' alt="Logo Vibes GG" />
-                        </Link>
-                    </div>
+                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+                        <img src={vibesLogo} id='Logo' alt="Logo Vibes GG" />
+                    </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>

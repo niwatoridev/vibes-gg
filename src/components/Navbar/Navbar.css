@@ -61,12 +61,12 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-family: 'Bebas Neue', sans-serif;
-        font-size: 3vh;
+    font-size: 3.5vh;
+    transition-duration: .4s;
 }
 
 .nav-links:hover {
-    border-bottom: 4px solid #fff;
-    transition: all 0.2s ease-out;
+    color: #f65a70;
 }
 
 .fa-bars {
@@ -94,17 +94,17 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 100%;
-        height: 90vh;
+        width: 101%;
+        height: 100vh;
         position: absolute;
-        top: 80px;
+        top: 0;
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
     }
 
     .nav-menu.active {
-        background: #242222;
+        background: #212424;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -138,11 +138,13 @@
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
+        z-index: 999;
     }
 
     .fa-times {
         color: #fff;
         font-size: 2rem;
+
     }
 
     .nav-links-mobile {
@@ -166,9 +168,12 @@
         transition: 250ms;
     }
 
-        #Logo {
-            width: 15vh;
-        }
+    #Logo {
+        width: 15vh;
+        position: absolute;
+        top: -10px;
+        left: -50px;
+    }
 
 }
 

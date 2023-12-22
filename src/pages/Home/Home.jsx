@@ -1,4 +1,4 @@
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/Navbar/Navbar';
 import './Home.css';
 // import { useEffect, useRef, useState } from 'react';
 // import TransparentNavBar from '../../components/NavBar/TransparentNavBar';

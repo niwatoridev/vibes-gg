@@ -86,3 +86,46 @@
   color: gray;
   background-color: gray;
 }
+
+.downArrow {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(268deg) brightness(107%) contrast(102%);
+  /*  #ffffff  */
+  position: absolute;
+  transition-duration: .5s;
+  animation-name: bouncing-arrow;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+#downArrowAboutUs {
+  top: 48vw;
+  right: 48vw;
+  width: 3vw;
+}
+
+
+.downArrow:hover {
+  filter: invert(48%) sepia(36%) saturate(2020%) hue-rotate(321deg) brightness(108%) contrast(101%);
+  /*  #ff646e #ffffff  */
+}
+
+@keyframes bouncing-arrow {
+
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(30%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+
+}
+
+#Home {
+  position: absolute;
+  top: 0;
+}

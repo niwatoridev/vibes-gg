@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,300;0,400;0,500;1,500&family=Rock+Salt&display=swap');
+
+.header {
+  width: 100vw;
+  display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#headerVideo {
+  margin-left: 0px;
+  margin-top: -125px;
+    width: 112vw;
+}
+
+#home {
+  position: absolute;
+  top: 1%;
+}
+
+.videoContainer {
+  display: block;
+  height: 950px;
+}
+
+.downArrow {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(268deg) brightness(107%) contrast(102%); /*  #ffffff  */
+  position: absolute;
+  transition-duration: .5s;
+  animation-name: bouncing-arrow;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+#downArrowAboutUs {
+  top: 44vw;
+  right: 48vw;
+  width: 3vw;
+}
+
+#downArrowProjects {
+  top: 95vw;
+  right: 48vw;
+  width: 3vw;
+}
+
+.downArrow:hover{
+  filter: invert(48%) sepia(36%) saturate(2020%) hue-rotate(321deg) brightness(108%) contrast(101%); /*  #ff646e #ffffff  */
+}
+
+@keyframes bouncing-arrow {
+
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(30%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+
+  }
+
+
+.detectorNav {
+  background-color: transparent;
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.body {
+  height: 100%;
+  background-color: rgb(33, 36, 36);
+}
+
+.footer {
+  height: 300px;
+  color: gray;
+  background-color: gray;
+}

@@ -9,20 +9,14 @@
     justify-items: center;
 }
 
-#headerVideo {
-  margin-left: 0px;
-  margin-top: -125px;
-    width: 112vw;
-}
-
 #home {
   position: absolute;
   top: 1%;
 }
 
 .videoContainer {
-  display: block;
-  height: 950px;
+  position: relative;
+  top: -100px;
 }
 
 .downArrow {
@@ -109,6 +103,14 @@
   /*  #ff646e #ffffff  */
 }
 
+#AboutUs {
+position: absolute;
+width: 10px;
+height: 10px;
+top: 102%;
+right: 50%;
+}
+
 @keyframes bouncing-arrow {
 
   0% {
@@ -128,4 +130,28 @@
 #Home {
   position: absolute;
   top: 0;
+}
+
+@media screen and (max-width: 960px) {
+  #downArrowAboutUs {
+      top: 180vw;
+      right: 43vw;
+      width: 12vw;
+    }
+
+  #AboutUsSection {
+    height: 200vw;
+  }
+
+  .main-home-container {
+    width: 100%;
+  }
+
+    #AboutUs {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 108%;
+      right: 50%;
+    }
 }

@@ -39,6 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
     margin-bottom: 3vw;
 }
 
@@ -87,4 +88,51 @@
 #darkQualityLogo {
     height: 100px;
     transition-duration: 450ms;
+}
+
+@media screen and (max-width: 960px) {
+
+    .aboutUsContainer h1 {
+        padding-top: 5vw;
+        padding-bottom: 3.5vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        font-size: 4.5vw;
+        font-family: 'Rock Salt', cursive;
+        color: whitesmoke;
+        text-align: center
+    }
+
+    .aboutUsTitleAndText p {
+        font-family: 'Bebas Neue', sans-serif;
+        text-align: center;
+        font-size: 4.5vw;
+        padding: 0 15%;
+        transition-duration: 1s;
+        color: whitesmoke;
+    }
+    .partners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vw;
+    }
+
+    .partnersTitle {
+        height: 40px;
+    }
+
+    .partnersLogos {
+        height: 100px;
+    }
+
+    .partners h3 {
+        font-size: 4.3vw;
+        color: white;
+        position: relative;
+        margin-bottom: 0;
+            text-align: center
+    }
+
+
 }

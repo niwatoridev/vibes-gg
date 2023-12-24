@@ -38,6 +38,11 @@ function Navbar() {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
+                            <HashLink to='#Home' smooth className='nav-links' onClick={closeMobileMenu}>
+                                Inicio
+                            </HashLink>
+                        </li>
+                        <li className='nav-item'>
                             <HashLink to='#AboutUs' smooth className='nav-links' onClick={closeMobileMenu}>
                                 Sobre Nosotros
                             </HashLink>

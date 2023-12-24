@@ -16,12 +16,14 @@ function Home() {
 
   return (
 <div className='main-home-container'>
-<Navbar></Navbar>
-<div id='Home'></div>
-<VideoHeader></VideoHeader>
-<HashLink to="#AboutUs" smooth><img src={downArrow} className='downArrow' id='downArrowAboutUs' alt="downArrow" /></HashLink>
-<div id='AboutUs'></div>
-<AboutUs></AboutUs>
+  <Navbar></Navbar>
+  <div id='Home'></div>
+  <VideoHeader></VideoHeader>
+  <HashLink to="#AboutUs" smooth><img src={downArrow} className='downArrow' id='downArrowAboutUs' alt="downArrow" /></HashLink>
+  <div id='AboutUsSection'>
+    <div id='AboutUs'></div>
+      <AboutUs></AboutUs>
+    </div>
 </div>
   );
 }

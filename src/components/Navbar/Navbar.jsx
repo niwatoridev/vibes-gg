@@ -48,9 +48,9 @@ function Navbar() {
                             </HashLink>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/services' smooth className='nav-links' onClick={closeMobileMenu}>
+                            <HashLink to='#Projects' smooth className='nav-links' onClick={closeMobileMenu}>
                                 Proyectos
-                            </Link>
+                            </HashLink>
                         </li>
                         <li className='nav-item'>
                             <Link to='/products' smooth className='nav-links' onClick={closeMobileMenu}>

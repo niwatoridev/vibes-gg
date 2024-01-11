@@ -6,7 +6,6 @@ import vibesLogo from './Media/Logo.png'
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
-    const dependency = 0
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -22,7 +21,7 @@ function Navbar() {
 
     useEffect(() => {
         showButton();
-    }, [dependency]);
+});
 
     window.addEventListener('resize', showButton);
 

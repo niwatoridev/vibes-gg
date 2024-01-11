@@ -42,7 +42,7 @@ export const ContactUs = () => {
   
   {/* <!-- Left contact page -->  */}
     
-    <form id="contact-form" class="form-horizontal" role="form">
+    <form id="contact-form" class="form-horizontal">
        
       <div class="form-group">
         <div class="col-sm-12">
@@ -82,18 +82,15 @@ export const ContactUs = () => {
 
         <hr/>
         <ul class="social-media-list">
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-github" aria-hidden="true"></i></a>
+          <li><a href="https://www.facebook.com/vibesgg" rel="noreferrer" target="_blank" class="contact-icon">
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
           </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-codepen" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-twitter" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-instagram" aria-hidden="true"></i></a>
-          </li>       
+          <li><a href="https://www.youtube.com/@vibesgg2472" rel="noreferrer" target="_blank" class="contact-icon">
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          </li>      
+          <li><a href="https://www.twitch.tv/vibesgg_" rel="noreferrer" target="_blank" class="contact-icon">
+            <i class="fa-brands fa-twitch" aria-hidden="true"></i></a>
+          </li>      
         </ul>
         <hr/>
 

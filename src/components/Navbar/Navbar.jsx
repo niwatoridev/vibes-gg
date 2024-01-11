@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from '../Button/Button';
-import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import './Navbar.css';
 import vibesLogo from './Media/Logo.png'
@@ -18,6 +16,7 @@ function Navbar() {
         } else {
             setButton(true);
         }
+        console.log(button)
     };
 
     useEffect(() => {

@@ -27,9 +27,9 @@ function AboutUs() {
                     <h3>MARCAS QUE HAN CONFIADO EN NOSOTROS</h3>
                 </div>
                 <div className='partnersLogos'>
-                    <a href="https://www.lagranbodega.com.mx/" target='_blank'><img src={gbLogo} id='gbLogo' className='filteredLogo' onMouseEnter={hoveredImg} onMouseLeave={noHoveredImg} alt="Logo Gran Bodega" /></a>
-                    <a href="https://twitter.com/novagamingsmash" target='_blank'><img src={novaGamingLogo} id='novaGamingLogo' className='filteredLogo' onMouseEnter={hoveredImg} onMouseLeave={noHoveredImg} alt="Logo Gran Bodega" /></a>
-                    <a href="https://www.facebook.com/DQTTeam" target='_blank'><img src={darkQualityLogo} id='darkQualityLogo' className='filteredLogo' onMouseEnter={hoveredImg} onMouseLeave={noHoveredImg} alt="Logo Dark Quality" /></a>
+                    <a href="https://www.lagranbodega.com.mx/" rel="noreferrer" target='_blank'><img src={gbLogo} id='gbLogo' className='filteredLogo' onMouseEnter={hoveredImg} onMouseLeave={noHoveredImg} alt="Logo Gran Bodega" /></a>
+                    <a href="https://twitter.com/novagamingsmash" rel="noreferrer" target='_blank'><img src={novaGamingLogo} id='novaGamingLogo' className='filteredLogo' onMouseEnter={hoveredImg} onMouseLeave={noHoveredImg} alt="Logo Gran Bodega" /></a>
+                    <a href="https://www.facebook.com/DQTTeam" rel="noreferrer" target='_blank'><img src={darkQualityLogo} id='darkQualityLogo' className='filteredLogo' onMouseEnter={hoveredImg} onMouseLeave={noHoveredImg} alt="Logo Dark Quality" /></a>
                 </div>
             </div>
         </div>

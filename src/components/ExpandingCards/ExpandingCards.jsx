@@ -1,8 +1,5 @@
 import './ExpandingCards.css'
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
-import img from '../../media/panelBackground.jpg'
-import { useState } from 'react';
+
 
 
 function ExpandingCards() {

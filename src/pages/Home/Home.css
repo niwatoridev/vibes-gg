@@ -44,6 +44,10 @@
   filter: invert(48%) sepia(36%) saturate(2020%) hue-rotate(321deg) brightness(108%) contrast(101%); /*  #ff646e #ffffff  */
 }
 
+.AboutUsSection {
+  margin: 0;
+}
+
 @keyframes bouncing-arrow {
 
   0% {
@@ -132,16 +136,17 @@ right: 50%;
   top: 0;
 }
 
+.main-home-container {
+  background-color: gold;
+}
+
 @media screen and (max-width: 960px) {
   #downArrowAboutUs {
-      top: 180vw;
+      top: 90vh;
       right: 43vw;
       width: 12vw;
     }
 
-  #AboutUsSection {
-    height: 200vw;
-  }
 
   .main-home-container {
     width: 100%;
@@ -151,7 +156,7 @@ right: 50%;
       position: absolute;
       width: 10px;
       height: 10px;
-      top: 108%;
+      top: 112vh;
       right: 50%;
     }
 }

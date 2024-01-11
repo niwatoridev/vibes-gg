@@ -12,29 +12,32 @@
 .projectsContainer {
     padding-top: 6vw;
     padding-bottom: 5vw;
-    height: 100%;
-    background-color: #ff646e;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-  }
-  
-  .projectsContainer h1 {
+    background: rgb(131, 58, 180);
+        background: linear-gradient(180deg, rgba(131, 58, 180, 1) 0%, rgba(178, 90, 108, 1) 52%, rgba(255, 113, 121, 1) 100%);
+}
+
+.projectsContainer h1 {
     font-size: 3vw;
     margin-top: 1vw;
     margin-bottom: 0;
     font-family: 'Rock Salt', cursive;
     color: whitesmoke;
-  }
+}
 
 .panel {
     display: flex;
     flex-direction: column;
-    background-image: url(../../media/panelBackground.jpg);
+
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background: rgb(162, 162, 162);
+        background: radial-gradient(circle, rgba(162, 162, 162, 1) 0%, rgba(29, 29, 29, 1) 100%);
     height: 32vw;
     border-radius: 50px;
     color: #fff;
@@ -62,7 +65,7 @@
     left: 40px;
     margin: 0;
     opacity: 0;
-    
+
 }
 
 .panel.active {
@@ -86,7 +89,7 @@
         width: 100vw;
     }
 
- 
+
 }
 
 .mainProjectContainer {
@@ -94,4 +97,3 @@
     flex-direction: column;
     align-items: center;
 }
-

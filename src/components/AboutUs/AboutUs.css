@@ -6,85 +6,135 @@
     top: 1vw;
     right: 0vw;
     height: 0vw;
-  
-  }
-  
-  .aboutUsContainer {
+
+}
+
+.aboutUsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(33, 36, 36);
-    padding-top: 5vw;
+    background: rgb(33, 36, 36);
+        background: linear-gradient(180deg, rgba(33, 36, 36, 1) 0%, rgba(58, 42, 74, 1) 26%, rgba(69, 44, 90, 1) 37%, rgba(81, 47, 107, 1) 49%, rgba(97, 51, 132, 1) 66%, rgba(109, 53, 149, 1) 78%, rgba(120, 56, 165, 1) 89%, rgba(126, 57, 173, 1) 95%, rgba(131, 58, 180, 1) 100%);
+    padding-top: 1vw;
     padding-bottom: 7vw;
-  }
+    height: 100vh;
+}
 
-  .aboutUsContainer h1 {  
+.aboutUsContainer h1 {
     padding-top: 1vw;
     font-size: 2vw;
     font-family: 'Rock Salt', cursive;
     color: whitesmoke;
-  
-  }
-  
-  .aboutUsTitleAndText p {
+
+}
+
+.aboutUsTitleAndText p {
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
     font-size: 1.5vw;
     padding: 0 15%;
     transition-duration: 1s;
     color: whitesmoke;
-  }
-  
-  .aboutUsTitleAndText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 3vw;
-  }
+}
 
-  .partners {
+.aboutUsTitleAndText {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
+    margin-bottom: 3vw;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.partners h3 {
+    font-size: 2vw;
+    color: white;
+    position: relative;
+    margin-bottom: 0;
+}
+
+
+.partnersLogos img {
+    max-width: 100px;
+    transition-duration: 250ms;
+
+}
+
+.partnersLogos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+    width: 80vw;
+    height: 10vw;
+}
+
+.filteredLogo {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(268deg) brightness(107%) contrast(102%);
+}
+
+#novaGamingLogo {
+    height: 100px;
+    transition-duration: 250ms;
+}
+
+
+#darkQualityLogo {
+    height: 100px;
+    transition-duration: 450ms;
+}
+
+@media screen and (max-width: 960px) {
+
+    .aboutUsContainer h1 {
+        padding-top: 5vw;
+        padding-bottom: 3.5vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        font-size: 4.5vw;
+        font-family: 'Rock Salt', cursive;
+        color: whitesmoke;
+        text-align: center
     }
-    
-    
-    .partners h3 {
-      font-size: 2vw;
-      color: white;
-      position: relative;
-      margin-bottom: 0;
-      }
-    
-    
-    .partnersLogos img{
-      max-width: 100px;
-      transition-duration: 250ms;
-    
+
+    .aboutUsTitleAndText p {
+        font-family: 'Bebas Neue', sans-serif;
+        text-align: center;
+        font-size: 4.5vw;
+        padding: 0 15%;
+        transition-duration: 1s;
+        color: whitesmoke;
     }
-    
-    .partnersLogos {
-      display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
+    .partners {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        align-content: stretch;
-      width: 80vw;
-      height: 10vw;
+        margin-top: 10vw;
     }
-    
-    .filteredLogo {
-      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(268deg) brightness(107%) contrast(102%);
+
+    .partnersTitle {
+        height: 40px;
     }
-    
-    #novaGamingLogo {
-      height: 100px; 
-      transition-duration: 250ms;
+
+    .partnersLogos {
+        height: 100px;
     }
-    
-    
-    #darkQualityLogo {
-      height: 100px;
-      transition-duration: 450ms;
+
+    .partners h3 {
+        font-size: 4.3vw;
+        color: white;
+        position: relative;
+        margin-bottom: 0;
+            text-align: center
     }
+
+
+}
